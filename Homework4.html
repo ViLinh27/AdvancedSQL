@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head>
+</head>
+<body style="color: #494c4e;">
+<p>Q1. Advanced SQL.</p>
+<p>In this example, we will consider a Zoo database. Please download the Zoo database from the Practice folder. <br>Open the ZooDatabase.sql file using SQLDeveloper. Answer the following questions:</p>
+<p>(i) Find the total feeding time for all of the rare animals. <br>(ii) Which animal(s) have a `time to feed' larger than every rare animal? Give the id and name of the animal. <br>(iii) Name zookeepers handling at least 4 animals. <br>(iv) Find the names of the animals that are not related to the bear.<br>(v) List zookeepers earning the most while feeding animals.</p>
+<p>Note for (v): 1. We are looking for that one single zookeeper who earns the most. 2. Dont use fancy DB-specific keywords such as top, fetch first, range, etc. Use SQL clauses that we have covered in the class.</p>
+<p></p>
+<p><strong><span style="color: #cc0000;"><span style="font-size: 16pt;">Submit your A.sql along with PDF of screenshots.&nbsp; </span></span></strong></p>
+<p>Q2. Using CTEs for Data Analytics. You are provided data for the Loan table .</p>
+<p>(i) Write a CTE 'Histogram' that counts the number of loans for each risk score. Write a simple query to display the results of the CTE in descending order of the count.<br>(ii) Spot the risk score(s) with the minimum number of loans. Call this CTE as RiskScoresWithMinLoans.<br>(iii) Using your Histogram and RiskScoresWithMinLoans CTE, write a SQL query to find description of loans which have a risk score spotted in (ii). </p>
+<p>Note: Data is available in raw form. Inserting by hand is a waste of time, unless you have extreme patience. You will have to write Insert statements to insert data into the database first. Create insert statements programmatically.&nbsp;Write a function in your favorite programming language to open and read this CSV file line by line and generate statements of the form</p>
+<p>Insert Into Loan Values (Val1, ‘Val2’, ‘Val3’, Val4,…);</p>
+<p>Where Val1 and Val4 are numeric and Val2 and Val3 are strings. Then copy/paste ‘Insert Into’ statements generated from your program to Q2.sql file and upload data into the table.&nbsp;</p>
+<p>Note: You may encounter errors and will have to fix some errors. &nbsp;</p>
+<p><strong><span style="color: #cc0000;"><span style="font-size: 16pt;">Submit your B.sql along with PDF of screenshots.&nbsp; </span></span></strong><strong><span style="color: #cc0000;"><span style="font-size: 16pt;"></span></span></strong></p>
+<p><span style="font-family: 'times new roman', times, serif; font-size: 19px;">3. We are provided data from a professional network DePauledIn (DePauledIn.sql). This data provides account details of people connected to each other. <i>SocialNetwork(Person, Friend), </i>which gives immediate friends of a person. A person may have many friends. This SocialNetwork relation is similar to Twitter in that friendship relationship is not necessarily bi-directional. This implies that if a tuple of SN says that A is a friend of B, then it does not imply that B is a friend of A. If B is a friend of A, which is possible, then it will be identified by another tuple. The data has cycles.&nbsp; </span></p>
+<p style="margin: 0in; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-size: 19px; font-family: 'times new roman', times, serif;">Note: There are cycles in the data. </span></p>
+<p style="margin: 0in; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-size: 19px; font-family: 'times new roman', times, serif;">Write recursive SQL queries to determine the following: <br></span></p>
+<p style="margin: 0in; font-size: 12pt; font-family: 'Times New Roman', serif;"></p>
+<ol>
+<li style="font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: 'times new roman', times, serif; font-size: 19px;">People to whom Brad can reach to either directly or transitively. </span></li>
+<li style="font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: 'times new roman', times, serif; font-size: 19px;">People in DePauledIN network to whom Brad cannot reach to. </span></li>
+<li style="font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: 'times new roman', times, serif; font-size: 19px;">Only those people who are connected to Christine via transitive relationship i.e not an immediate follower. </span></li>
+<li style="font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: 'times new roman', times, serif; font-size: 19px;">Find the shortest path to reach from Amy to James. </span></li>
+</ol>
+<p style="margin: 0in; font-size: 12pt; font-family: 'Times New Roman', serif;"><strong><span style="color: #cc0000;"><span style="font-size: 16pt;">Submit your C.sql along with PDF of screenshots.&nbsp; </span></span></strong></p>
+<p style="margin: 0in; font-size: 12pt; font-family: 'Times New Roman', serif;"></p>
+</body></html>
